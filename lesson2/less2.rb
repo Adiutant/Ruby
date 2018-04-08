@@ -6,3 +6,4 @@ puts name.capitalize + ", you are " + age + " years old"
 string = name.capitalize + ", you are " + age + " years old"
 puts string.reverse
 puts age.to_i + name.length
+puts "Good bye"

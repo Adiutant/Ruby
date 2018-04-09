@@ -1,12 +1,13 @@
 puts "Print number"
 num = gets.chomp.to_i
-def n(num)
-	puts num % 10
+def n(num) 
 c = 0
-while (num % 10) > 0
+n = 1
+while num != (num % 10 ** n) 
 	c += 1
-	num = num / 10
+	n += 1
 end
-puts c
+print c
+return  num % 10
 end
 n(num)

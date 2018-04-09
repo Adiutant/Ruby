@@ -1,13 +1,12 @@
 puts "Print number"
-num = gets.chomp
+num = gets.chomp.to_i
 def n(num)
-	puts num.length
-	num.reverse!
-i=num.length
-while i >1
-	num.chop!
-	i-=1
+	puts num % 10
+c = 0
+while (num % 10) > 0
+	c += 1
+	num = num / 10
 end
-puts num
+puts c
 end
 n(num)

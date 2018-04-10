@@ -1,3 +1,17 @@
+def bus(a)
+  n = 0
+  c = 0
+  s = 0
+  while n < 3
+  while c < 1
+  s += a[n][c + 1] - a[n][c]
+  c += 1
+  end
+  n += 1
+  c = 0
+  end
+  return s
+end
 a = Array.new
 a[0] = Array.new
 a[1] = Array.new
@@ -6,22 +20,17 @@ n = 0
 c = 0
 while n < 3
 	while c < 2
-	a[n][c] = gets.chomp
+	a[n][c] = gets.chomp.to_i
 	c += 1
 end
-	n += 1
-	c = 0
+  n += 1
+  c = 0
 end
-n = 0
-s = 0
-c = 1
-a.flatten
-	while c < 3
-	s = s += (a[c] -= a[n])
-	c += 1
-	n += 1
-end
+s = bus(a)
 puts s
+
+
+
 
 
 

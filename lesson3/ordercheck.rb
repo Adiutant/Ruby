@@ -2,13 +2,13 @@
 def order(a,x)
 while x < 3
 if (a[x]) < (a[x + 1]) then
-ch = "true"
+  ch = "true"
 else
-ch = "false"
+  ch = "false"
 end
-x += 1
+  x += 1
 end
-return ch
+  return ch
 end
 a = Array.new
 n = 0

@@ -1,6 +1,6 @@
 def count(a, ch)
   i = 0
-  a.each{|c| a.each{|v| if ch == v then i+=1 end}}
+  a.each{|c| a.each{|v| i+=1 if ch == v }}
   return i / a.size
 end
 s = IO.read('/home/adiutant/ruby/text')

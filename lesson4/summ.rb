@@ -13,9 +13,6 @@ def sum_pairs(arr, sum)
     c += 1
     n = 1
   end 
-  p a1
-  p "///"
-  #p a2
   a1.compact!
   c = 0
   n = 1
